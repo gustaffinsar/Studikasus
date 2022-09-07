@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Judul">Gunung</h1>
+    <h1 id="Hapus">Hapus Ini</h1>
+    <p id="Paragraf">Gunung adalah salah satu kenampakan alam yang indah yang bisa juga dikatakan sebagai dataran yang menonjol dan lebih tinggi dari dataran di sekitarnya.
+        Pada umumnya gunung dapat mencapai tinggi hingga ratusan meter di atas permukaan laut.
+        Ketinggian ini yang menyebabkan gunung tampak indah jika dipandang dari bawah maupun dari puncaknya.</p>
+    <img src="https://tse3.mm.bing.net/th?id=OIP._9NzU6B69m3AUt2c_j1ANAHaEK&pid=Api&P=0" id="GambarGunung">
+    <script>
+        var Kalimat=document.getElementById("Paragraf");
+        Paragraf.style.color="orange";
+
+        var Gambar=document.createElement("img");
+        Gambar.src = "https://tse1.mm.bing.net/th?id=OIP.BPY5VY-Os5hcNKahkrwVzAHaEc&pid=Api&P=0";
+        document.body.append(Gambar);
+
+        var Hapus=document.getElementById("Hapus");
+        Hapus.remove();
+
+        var Style=document.getElementById("GambarGunung")
+        GambarGunung.style.backgroundColor="green";
+        GambarGunung.style.padding="20px";
+    </script>
+</body>
+</html>
